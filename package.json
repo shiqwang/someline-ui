@@ -1,0 +1,75 @@
+{
+  "_from": "git+http://git@gitee.com/someline/someline-ui-vue-components.git#v0.3.15",
+  "_id": "someline-ui@0.3.15",
+  "_inBundle": false,
+  "_location": "/someline-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "someline-ui@git+http://git@gitee.com/someline/someline-ui-vue-components.git#v0.3.15",
+    "name": "someline-ui",
+    "escapedName": "someline-ui",
+    "rawSpec": "git+http://git@gitee.com/someline/someline-ui-vue-components.git#v0.3.15",
+    "saveSpec": "git+http://git@gitee.com/someline/someline-ui-vue-components.git#v0.3.15",
+    "fetchSpec": "http://git@gitee.com/someline/someline-ui-vue-components.git",
+    "gitCommittish": "v0.3.15"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+http://git@gitee.com/someline/someline-ui-vue-components.git#c1652ac46999fc30979f951eeadc471d9f482c1b",
+  "_spec": "someline-ui@git+http://git@gitee.com/someline/someline-ui-vue-components.git#v0.3.15",
+  "_where": "/Users/Libern/Code/caigoujianghu",
+  "author": {
+    "name": "Libern",
+    "email": "libernlin@gmail.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "element-ui": "^2.4.*",
+    "lodash": "^4.17.4",
+    "vue": "^2.5.*"
+  },
+  "deprecated": false,
+  "description": "Someline UI for Vue.js 2 components",
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "cross-env": "^3.1.3",
+    "css-loader": "^0.26.1",
+    "eslint": "^3.12.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-html": "^1.6.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "vue-loader": "^10.0.0",
+    "vue-template-compiler": "^2.1.6",
+    "webpack": "2.2.1",
+    "webpack-merge": "^1.1.2"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "plugin"
+  ],
+  "license": "MIT",
+  "main": "dist/someline-ui.common.js",
+  "name": "someline-ui",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:browser && npm run build:common",
+    "build:browser": "cross-env NODE_ENV=production webpack --config config/webpack.config.browser.js --progress --hide-modules",
+    "build:common": "cross-env NODE_ENV=production webpack --config config/webpack.config.common.js --progress --hide-modules",
+    "dev": "cross-env NODE_ENV=development webpack --config config/webpack.config.dev.js --progress --watch",
+    "prepublish": "npm run build"
+  },
+  "unpkg": "dist/someline-ui.browser.js",
+  "version": "0.3.15"
+}
